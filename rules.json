@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "curr", "value": "usd" },
+              { "key": "hl", "value": "en" },
+              { "key": "gl", "value": "us" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "urlFilter": "||www.google.com/travel/flights",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
